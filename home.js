@@ -439,7 +439,7 @@ window.onload = async () => {
   const listOfSearchArtists = await getArtists();
   fillPageArtists(listOfSearchArtists);
 
-  const listOfGenres = await getPlaylists();
-  console.log(listOfGenres);
-  fillPagePlaylists(listOfGenres);
+  // const listOfGenres = await getPlaylists();
+  // console.log(listOfGenres);
+  // fillPagePlaylists(listOfGenres);
 };

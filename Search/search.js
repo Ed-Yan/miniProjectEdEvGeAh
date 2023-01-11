@@ -4,8 +4,8 @@ const containerofsearch = document.getElementById("containerofsearch");
 let input = document.getElementById("floatingInput");
 let inputvalue = document.getElementById("floatingInput").value;
 //
-input.addEventListener("keyup", getSearch);
-async function getSearch(e) {
+input.addEventListener("keyup", search);
+async function search(e) {
   const options = {
     method: "GET",
     headers: {
@@ -14,7 +14,7 @@ async function getSearch(e) {
     },
   };
   const response = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/search?q=${e.target.value}`,
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=${floatingInput.value}`,
     options
   );
   const listOfSearch = await response.json();
