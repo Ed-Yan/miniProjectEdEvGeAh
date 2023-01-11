@@ -83,3 +83,6 @@ function changeSongPlace(time) {
 }
 
 //Evgeniia
+
+
+// Ahmad Jahangiry
