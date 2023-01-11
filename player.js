@@ -81,3 +81,5 @@ song.ontimeupdate = function (value) {
 function changeSongPlace(time) {
   song.currentTime = Math.round((time / 100) * song.duration);
 }
+
+//Evgeniia
