@@ -443,3 +443,8 @@ window.onload = async () => {
   // console.log(listOfGenres);
   // fillPagePlaylists(listOfGenres);
 };
+
+users = ["Edgar", "George", "Evgenia", "Ahmad"];
+const randomUser = Math.floor(Math.random() * users.length);
+
+userName.innerText = users[randomUser];
