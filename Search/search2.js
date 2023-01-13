@@ -1,4 +1,4 @@
-searchBtn.addEventListener("click", search);
+floatingInput.addEventListener("keyup", search);
 
 async function search(e) {
   try {
@@ -17,30 +17,30 @@ async function search(e) {
     recentsearches.innerHTML = "";
     recentsearches.classList.add("row", "row-cols-7", "g-3");
     for (i = 0; i < 20; i++) {
-      recentsearches.innerHTML += 
-    //   ` <div class="col">
-    //   <div class="card" id="darker">
-    //     <a href="../Artist/artist.html?songId=${listOfSearch.data[i].album.id}"><img
-    //       src="${listOfSearch.data[i].album.cover_medium}"
-    //       class="img-fluid p-2"
-    //       id="rounded"
-    //       style="height: 100%; min-width: 100%;"
-    //       alt="..."
-    //     /></a>
-    //     <div class="card-body">
-    //       <h5 class="card-title">${listOfSearch.data[i].album.title}</h5>
-    //       <div
-    //       class="d-flex align-items-baseline justify-content-between"
-    //     >
-    //       <p class="card-text">Chill lofi hip-hop mix.</p>
-    //       <i class="fa-solid fa-play 2-xl"></i>
-    //     </div>
-    //     </div>
-    //   </div>
-    // </div>
-    //   `;
+      recentsearches.innerHTML +=
+        //   ` <div class="col">
+        //   <div class="card" id="darker">
+        //     <a href="../Artist/artist.html?songId=${listOfSearch.data[i].album.id}"><img
+        //       src="${listOfSearch.data[i].album.cover_medium}"
+        //       class="img-fluid p-2"
+        //       id="rounded"
+        //       style="height: 100%; min-width: 100%;"
+        //       alt="..."
+        //     /></a>
+        //     <div class="card-body">
+        //       <h5 class="card-title">${listOfSearch.data[i].album.title}</h5>
+        //       <div
+        //       class="d-flex align-items-baseline justify-content-between"
+        //     >
+        //       <p class="card-text">Chill lofi hip-hop mix.</p>
+        //       <i class="fa-solid fa-play 2-xl"></i>
+        //     </div>
+        //     </div>
+        //   </div>
+        // </div>
+        //   `;
 
-      `
+        `
       <div class="col-2">
           <div class="card" id="darker"> <a href="../Artist/artist.html?songId=${listOfSearch.data[i].album.id}"><img
             src="${listOfSearch.data[i].album.cover_medium}"
@@ -56,7 +56,6 @@ async function search(e) {
       </div>
               `;
     }
-    console.log(listOfSearch.data[0]);
   } catch (error) {
     console.log(error, error.message);
   }
