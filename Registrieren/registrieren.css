@@ -82,7 +82,8 @@ span {
   color: gray;
 }
 
-.button {
+.button-style {
+  height: 400px;
   display: grid;
   place-items: center;
   font-family: "Montserrat", sans-serif;
@@ -90,5 +91,18 @@ span {
 
 #h3 {
   margin-top: 30px;
-  color: #01497c;
+}
+
+#username,
+#email,
+#password {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  height: 30px;
+  width: 400px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 20px;
+  padding-left: 10px;
 }
