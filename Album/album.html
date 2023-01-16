@@ -100,12 +100,8 @@
     </div>
     <main class="body">
       <nav class="navbar sticky-top mb-3">
-        <div class="d-flex align-items-center">
-          <span
-            ><i class="fa-solid fa-chevron-left chevrons"></i
-            ><i class="fa-solid fa-chevron-right chevrons"></i
-          ></span>
-          <div id="righttwo">
+        <div class="d-flex align-items-center" id="rightnav">
+          <div style="margin-right: 1rem">
             <button
               type="button"
               class="btn btn-outline-white text-light"
@@ -114,17 +110,30 @@
               Upgrade
             </button>
           </div>
-          <span class="d-flex" id="right">
-            <img
-              src="https://i.pinimg.com/564x/08/35/96/083596835424340eda90439fd20e5ee9.jpg"
-              style="width: 30px; height: 30px; border-radius: 50%"
-            />
-            <p>
-              &nbsp;&nbsp;Gh0stxt&nbsp;&nbsp;<i
-                class="fa-solid fa-caret-down"
-              ></i>
-            </p>
-          </span>
+          <div class="dropdown">
+            <button
+              class="btn btn-dark dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="border-radius: 25px"
+            >
+              <img
+                src="https://i.pinimg.com/564x/08/35/96/083596835424340eda90439fd20e5ee9.jpg"
+                style="width: 30px; height: 30px; border-radius: 50%"
+              />
+              <span id="userName"></span>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li>
+                <a class="dropdown-item" href="../Login/login.html">Log out</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div>
@@ -210,11 +219,6 @@
                 <span onclick="prevTrack()"><svg class="mx-2 prev-track"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18 18L9.5 12L18 6V18ZM8 18H6V6H8V18Z" fill="#F5F5F5"></path>
                 </svg></span>
-                <!-- <span onclick="playpauseTrack()"><svg class="mx-2" width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12 22C6.47967 21.994 2.00606 17.5204 2 12V11.8C2.10993 6.30455 6.63459 1.92797 12.1307 2.0009C17.6268 2.07382 22.0337 6.5689 21.9978 12.0654C21.9619 17.5618 17.4966 21.9989 12 22ZM10 7.50002V16.5L16 12L10 7.50002Z"
-                    fill="#F5F5F5"></path>
-                </svg></span> -->
                 <span class="mx-2 playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></span>
                 <span onclick="nextTrack()"><svg class="mx-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18 18H16V6H18V18ZM6 18V6L14.5 12L6 18Z" fill="#F5F5F5"></path>
@@ -230,7 +234,6 @@
         
             <div class="playbar align-items-center justify-content-space-between d-flex px-2 m-0 position-relative">
               <span class="current-time">00:00</span>
-              <!-- <hr class="playbarline" /> -->
               <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
               <span class="total-duration">00:00</span>
             </div>

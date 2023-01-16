@@ -1,3 +1,7 @@
+const userNm = localStorage.getItem("userName");
+userName.innerText = userNm;
+
+
 //variables
 const topsidecards = document.querySelector("#topsidecards");
 const midsidecards = document.querySelector("#midsidecards");
@@ -296,7 +300,3 @@ window.onload = async () => {
   fillPageArtists(listOfSearchArtists);
 };
 
-users = ["Edgar", "George", "Evgenia", "Ahmad"];
-const randomUser = Math.floor(Math.random() * users.length);
-
-userName.innerText = users[randomUser];

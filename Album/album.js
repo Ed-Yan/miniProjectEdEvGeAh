@@ -1,3 +1,6 @@
+const userNm = localStorage.getItem("userName");
+userName.innerText = userNm;
+
 function formatTime(s) {
   return (s - (s %= 60)) / 60 + (9 < s ? ":" : ":0") + s;
 }
@@ -16,8 +19,6 @@ async function getAllALbums() {
     options
   );
   const albums = await response.json();
-  console.log(albums);
-  console.log(albums.tracklist);
 }
 getAllALbums();
 const params = new URLSearchParams(window.location.search);
@@ -38,13 +39,11 @@ async function getRecords() {
   );
 
   const searchList = await response.json();
-  console.log(searchList);
   return searchList; // taking the album array
 }
 
 window.onload = async () => {
   const searchList = await getRecords();
-  console.log(searchList);
   displayAlbum(searchList);
   displaySongs(searchList);
 };
@@ -74,7 +73,6 @@ const displayAlbum = async (searchList) => {
 const songContainer = document.querySelector(".songList");
 const displaySongs = async (searchList) => {
   const songArr = searchList.tracks.data;
-  console.log(songArr);
 
   for (i = 0; i < songArr.length; i++) {
     const songDiv = document.createElement("div");

@@ -8,7 +8,6 @@ fetchtackList = async (url) => {
   };
   const response = await fetch(url, options);
   const result = await response.json();
-  console.log("result:", result);
 
   return result;
 };
@@ -24,7 +23,6 @@ fetchArtistAPI = async () => {
     options
   );
   const result = await response.json();
-  console.log("result--->", result);
   const trackList = await fetchtackList(result.tracklist);
   renderTracklist(trackList);
   return result;
@@ -38,7 +36,6 @@ fetchtackList = async (url) => {
   return result;
 };
 renderTracklist = ({ data, next }) => {
-  console.log("data:", data);
   const trackList = document.getElementById("track-list");
   data.map(
     ({ title, rank, duration, album }, index) =>
