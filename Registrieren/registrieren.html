@@ -27,7 +27,7 @@
       <div class="signUp">
         <h2 class="Spotify-text">
           <i id="spotify" class="fa-brands fa-spotify"></i>
-          <p>Smookify</p>
+          <p>Spotify</p>
         </h2>
         <ul class="item">
           <li class="item-1">
@@ -49,12 +49,90 @@
 
       <form>
         <label for="username">What's your email?</label><br />
-        <input type="text" id="username" name="username" /><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your email."
+        /><br />
+
+        <label for="username">Confirm your email.</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your email again."
+        /><br />
 
         <label for="password">Password</label><br />
-        <input type="password" id="password" name="password" />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Create a password."
+        /><br />
+
+        <label for="username">What should we call you?</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter a profile name."
+        /><br />
+        <p>This appears on your profile.</p>
+
+        <legend>What's your date of birth?</legend>
+        <div class="field-inline-block">
+          <label>DD</label>
+          <input
+            class="input-date"
+            type="text"
+            pattern="[0-9]*"
+            maxlength="2"
+            size="2"
+            class="date-field"
+          />
+        </div>
+
+        <div class="field-inline-block">
+          <label>MM</label>
+          <input
+            class="input-date"
+            type="text"
+            pattern="[0-9]*"
+            maxlength="2"
+            size="2"
+            class="date-field"
+          />
+        </div>
+
+        <div class="field-inline-block">
+          <label>YYYY</label>
+          <input
+            class="input-date"
+            type="text"
+            pattern="[0-9]*"
+            maxlength="4"
+            size="4"
+            class="date-field date-field--year"
+          />
+        </div>
+        <br />
+
+        <div class="gender">
+          <legend>What's your gender?</legend>
+          <input type="radio" name="gender" value="male" /> Male
+          <input type="radio" name="gender" value="female" /> Female
+          <input type="radio" name="gender" value="non-binary" /> Non-binary
+          <input type="radio" name="gender" value="other" /> Other
+          <input type="radio" name="gender" value="prefer not to say" /> Prefer
+          not to say
+        </div>
       </form>
-      <button id="button-style">Log in</button>
+      <button id="button-style">Sign up</button>
+      <p class="logInText">
+        Have an account?<a class="logInLink" href="">Log in.</a>
+      </p>
     </section>
     <script src="registrieren.js"></script>
   </body>
