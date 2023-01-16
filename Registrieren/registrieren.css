@@ -107,6 +107,24 @@ span {
   padding-left: 10px;
 }
 
+#profileName {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+#appearsOnProfile {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 14px;
+}
+
 fieldset {
   border: none;
   background: #efefef;
@@ -114,6 +132,7 @@ fieldset {
 }
 
 legend {
+  margin-top: 20px;
   padding: 20px 0 20px 0;
 }
 
@@ -146,17 +165,18 @@ h2 {
 }
 
 .gender {
-  padding: 30px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 #button-style {
-  width: 120px;
+  width: 160px;
   height: 60px;
+  border: 1px solid rgb(39, 247, 136);
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   border-radius: 35px;
-  background-color: green;
+  background-color: rgb(39, 247, 136);
   margin: 30px 0 10px 0;
 }
 
