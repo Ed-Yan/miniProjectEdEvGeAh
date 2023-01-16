@@ -1,4 +1,3 @@
-//format the time for h mm
 function formatTime(s) {
   return (s - (s %= 60)) / 60 + (9 < s ? ":" : ":0") + s;
 }
@@ -33,9 +32,7 @@ async function getRecords() {
   };
 
   const response = await fetch(
-    //`https://striveschool-api.herokuapp.com/api/deezer/album/73183162`, //later change for ${album id}
-
-    `https://striveschool-api.herokuapp.com/api/deezer/album/${songId}`, //later change for ${album id}
+    `https://striveschool-api.herokuapp.com/api/deezer/album/${songId}`,
 
     options
   );
@@ -78,12 +75,6 @@ const songContainer = document.querySelector(".songList");
 const displaySongs = async (searchList) => {
   const songArr = searchList.tracks.data;
   console.log(songArr);
-
-  //   songArr.forEach(() => {
-  //     const songDiv = document.createElement("div");
-  //     songDiv.innerHTML = `${searchList.tracks.data.title}`;
-  //     songContainer.appendChild(songDiv);
-  //   });
 
   for (i = 0; i < songArr.length; i++) {
     const songDiv = document.createElement("div");
