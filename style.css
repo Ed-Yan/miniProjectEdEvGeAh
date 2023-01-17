@@ -375,14 +375,11 @@ a {
 .playpause-track i {
   font-size: 2.5em;
   margin-top: 15px;
-
 }
 
 .playpause-track {
   margin-top: 20px;
-
 }
-
 
 .volume {
   margin: 0px 5px;
@@ -393,7 +390,7 @@ a {
   opacity: 0.75;
 }
 
-.seek_slider{
+.seek_slider {
   margin: 15px 20px;
   width: 300px;
   -webkit-appearance: none;
@@ -402,24 +399,22 @@ a {
   height: 5px;
   background: black;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
-
-
-.volume_slider{
-    margin: 15px 20px;
-    width: 125px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    height: 5px;
-    background: black;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
+.volume_slider {
+  margin: 15px 20px;
+  width: 125px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
 
 /* Modify the appearance of the slider thumb */
 .seek_slider::-webkit-slider-thumb,
@@ -433,12 +428,3 @@ a {
   cursor: pointer;
   border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-

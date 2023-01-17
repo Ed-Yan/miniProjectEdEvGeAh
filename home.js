@@ -1,7 +1,6 @@
 const userNm = localStorage.getItem("userName");
 userName.innerText = userNm;
 
-
 //variables
 const topsidecards = document.querySelector("#topsidecards");
 const midsidecards = document.querySelector("#midsidecards");
@@ -22,7 +21,7 @@ async function getAlbums() {
   );
 
   const listOfSearchAlbums = await response.json();
-  return listOfSearchAlbums; //                                                       listOfSearchAlbums
+  return listOfSearchAlbums;
 }
 
 const fillPageAlbums = function (listOfSearchAlbums) {
@@ -299,4 +298,3 @@ window.onload = async () => {
   const listOfSearchArtists = await getArtists();
   fillPageArtists(listOfSearchArtists);
 };
-
